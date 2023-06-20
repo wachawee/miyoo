@@ -11,11 +11,11 @@
 #include <iostream>
 using namespace std;
 
-#include "../../../source/host.h"
-#include "../../../source/hostVmShared.h"
-#include "../../../source/nibblehelpers.h"
-#include "../../../source/logger.h"
-#include "../../../source/filehelpers.h"
+#include "host.h"
+#include "hostVmShared.h"
+#include "nibblehelpers.h"
+#include "logger.h"
+#include "filehelpers.h"
 
 #ifndef _DESKTOP
 #include "ao.h"
