@@ -6,7 +6,7 @@
 # INCLUDES is a list of directories containing header files
 #
 #---------------------------------------------------------------------------------
-TARGET		:=	lesson07
+TARGET		:=	lesson01
 BUILD		:=	build
 SOURCES		:=	${SOURCES} source
 INCLUDES	:=	${INCLUDES} source
