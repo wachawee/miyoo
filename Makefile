@@ -6,7 +6,7 @@
 # INCLUDES is a list of directories containing header files
 #
 #---------------------------------------------------------------------------------
-TARGET		:=	FAKE08
+TARGET		:=	lesson07
 BUILD		:=	build
 SOURCES		:=	${SOURCES} source
 INCLUDES	:=	${INCLUDES} source
@@ -44,7 +44,7 @@ CFLAGS	+=	$(INCLUDE)
 
 CXXFLAGS	:= $(CFLAGS) -fno-rtti -std=gnu++17 
 
-LIBS	:= -lSDL -lpthread -lmi_sys -lmi_ao -lcam_os_wrapper -s
+LIBS	:= -lSDL -lSDL_ttf -lpthread -lmi_sys -lmi_ao -lcam_os_wrapper -s
 
 LDFLAGS	:= $(LIBS)
 
