@@ -107,7 +107,7 @@ bool load_files()
     background = load_image( "background.png" );
 
     //Open the font
-    font = TTF_OpenFont( "lazy.ttf", 28 );
+    font = TTF_OpenFont( "Garuda.ttf", 32 );
 
     //If there was a problem in loading the background
     if( background == NULL )
@@ -159,7 +159,8 @@ int main( int argc, char* args[] )
     }
 
     //Render the text
-    message = TTF_RenderText_Solid( font, "The quick brown fox jumps over the lazy dog", textColor );
+    message = TTF_RenderUTF8_Blended( font, "กดปุ่มขึ้น", textColor ); 
+    //message = TTF_RenderText_Solid( font, "The quick brown fox jumps over the lazy dog", textColor );
 
     //If there was an error in rendering the text
     if( message == NULL )
