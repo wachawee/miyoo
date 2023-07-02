@@ -114,7 +114,7 @@ void init(void)
 #endif    
 
 
-    font = TTF_OpenFont("HYZhengYuan-95W.ttf", 18);
+    font = TTF_OpenFont("HYZhengYuan-95W.ttf", 24);
     tinyfont = TTF_OpenFont("HYZhengYuan-95W.ttf", 16);
 
     SDL_ShowCursor(SDL_DISABLE);
@@ -446,7 +446,7 @@ void draw_score(int score)
     snprintf(buf, sizeof(buf), "%d", score);
     draw_string(screenbuffer, font, rect, buf, white, ALIGN_RIGHT);
     rect.y += rect.h;
-    draw_string(screenbuffer, font, rect, "v1.2", white, ALIGN_RIGHT);
+    draw_string(screenbuffer, font, rect, "Hello World!", white, ALIGN_RIGHT);
 }
 
 void handle_keydown(SDLKey key)
